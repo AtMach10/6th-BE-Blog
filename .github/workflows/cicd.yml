@@ -47,6 +47,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
+          port : 22
           script: |
             cd /myproject                 # docker-compose.yml 있는 디렉토리
             docker-compose pull            # 최신 이미지 가져오기
