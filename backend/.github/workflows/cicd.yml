@@ -3,7 +3,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - "장유정/main"
+      - "장유정/8주차"
+  pull_request:
+    branches:
+      - "장유정/main"
 
 jobs:
   build-and-deploy:
