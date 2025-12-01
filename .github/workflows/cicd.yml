@@ -37,6 +37,7 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
+          cd backend
           docker build -t docyoojung/my-app:latest .
           docker push docyoojung/my-app:latest
 
